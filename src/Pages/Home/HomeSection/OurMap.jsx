@@ -1,5 +1,5 @@
 import React from 'react'
-import  Map1  from '../images/map.png'
+import  Map1  from '../../../images/map.png'
 export default function OurMap() {
   return (
    <div className="our-map">

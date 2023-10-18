@@ -1,0 +1,362 @@
+.event {
+    .intro {
+        // background-image: url("../../images/Bg3.png");
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // position: relative;
+        width: 100%;
+        margin-bottom: 86px;
+        position: relative;
+        .bg-img {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h1 {
+            color: var(--foundation-logo-shades-logo-shades-100, #ece4d1);
+            text-align: center;
+            max-width: 287px;
+            width: 100%;
+            margin: auto;
+            /* EN-Display Medium */
+
+            font-family: Satoshi;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 52px; /* 115.556% */
+            border: 1px solid var(--foundation-logo-shades-logo-shades-600, #b09860);
+            padding: 25px 30px;
+        }
+        .sm-scr {
+            display: none;
+        }
+        .intro-in {
+            width: 100%;
+            padding: 276px 157px 200px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .image {
+            bottom: -48px;
+            position: absolute;
+            width: 100%;
+            height: 89px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .event-desc {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding: 0 160px 43px;
+        .desc-left {
+            width: 49%;
+            h2 {
+                color: var(--foundation-logo-shades-logo-shades-700, #89774b);
+                text-align: start;
+                /* EN-Display Medium */
+                font-family: Satoshi;
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 500;
+                margin-bottom: 30px;
+                line-height: 52px; /* 115.556% */
+            }
+            p {
+                color: var(--foundation-logo-shades-logo-shades-700, #89774b);
+                text-align: start;
+                /* EN-Headline Small */
+                font-family: Satoshi;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 133.333% */
+            }
+        }
+
+        .desc-right {
+            width: 49%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .img-left {
+                display: none;
+            }
+        }
+    }
+
+    .img-gallery {
+        padding: 43px 160px 132px;
+        position: relative;
+        .top {
+            position: relative;
+            width: 100%;
+            height: 340px;
+            z-index: 100;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .bottom {
+            position: relative;
+            width: 100%;
+            display: flex;
+            z-index: 100;
+            justify-content: center;
+            align-items: start;
+            gap: 16px;
+            margin-top: 92px;
+            .bt-left {
+                width: 326px;
+                height: 254px;
+            }
+            .bt-right {
+                width: 326px;
+                height: 439px;
+            }
+        }
+        .gallery-bg1 {
+            display: block;
+            width: 100%;
+            height: 150px;
+            z-index: 0;
+            position: absolute;
+            top: 150px;
+            left: 0px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .gallery-bg{
+            display: none;
+        }
+    }
+
+.book{
+    position: relative;
+height: 125px;
+    img{
+position: absolute;
+z-index: 0;
+width: 100%;
+height: 125px;
+
+    }
+    .btn-contaner{
+        height: 100%;
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+button{
+    
+width: 230px;
+padding: 13px 20px;
+background: var(--foundation-logo-shades-logo-shades-500, #C1A76A);
+color: var(--foundation-brown-white, #FFF);
+position: relative;
+z-index: 100;
+/* EN-Headline Medium */
+font-family: Satoshi;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 128.571% */
+}
+    }
+
+}
+
+}
+
+@media (max-width: 1189px) {
+    .event {
+        .event-desc,
+        .img-gallery {
+            padding: 70px 80px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .event {
+        .img-gallery {
+            .top {
+                height: 340px;
+            }
+        }
+    }
+}
+
+@media (max-width: 786px) {
+    .event {
+        .intro {
+            margin-bottom: 40px;
+            .intro-in {
+                padding: 276px 57px 200px;
+            }
+        }
+        .event-desc {
+            flex-direction: column;
+            padding: 70px 80px 12px;
+            .desc-left,
+            .desc-right {
+                width: 100%;
+            }
+            .desc-right {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                align-items: center;
+            }
+            img {
+                width: 100%;
+                max-width: 400px;
+                height: 147px !important;
+            }
+            .img-left {
+                display: block !important;
+                max-width: 150px;
+            }
+        }
+
+        .img-gallery {
+            padding: 13px 80px 70px;
+            position: relative;
+
+            .bottom {
+                margin-top: 25px;
+                .bt-left {
+                    width: 100%;
+                }
+                .bt-right {
+                    display: none;
+                }
+            }
+            .gallery-bg1{
+                display: none;
+            }
+            .gallery-bg {
+                display: block;
+                width: 100%;
+                height: 440px;
+                z-index: 0;
+                position: absolute;
+                top: -8%;
+                left: 0px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .event {
+        .intro {
+            height: 400px;
+
+            .bg-scr {
+                display: none;
+            }
+            .sm-scr {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 121px;
+                padding: 12px 26px;
+                color: var(--foundation-logo-shades-logo-shades-100, #ece4d1);
+                text-align: center;
+                /*EN-HeadlineSmall*/
+                font-family: Satoshi;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /*133.333%*/
+                -moz-transform: translate(-50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+            }
+            .image {
+                height: 70px;
+                bottom: -38px;
+            }
+        }
+        .event-desc {
+            padding: 40px 16px;
+
+            .desc-left {
+                h2 {
+                    color: var(--foundation-logo-shades-logo-shades-700, #89774b);
+
+                    /* EN-Title Large */
+                    font-family: Satoshi;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 28px; /* 127.273% */
+                }
+                p {
+                    color: var(--foundation-logo-shades-logo-shades-700, #89774b);
+
+                    /* EN-Label Medium */
+                    font-family: Satoshi;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px; /* 133.333% */
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .img-left {
+                max-width: 87px;
+            }
+        }
+        .img-gallery {
+            padding-left: 16px;
+            padding-right: 16px;
+            .top {
+                height: 150px;
+            }
+            .bt-left,
+            .bt-right {
+                height: 150px !important;
+            }
+            .gallery-bg {
+                height: 244px;
+                top: -11%;
+            }
+        }
+    }
+}

@@ -1,8 +1,8 @@
 import React from 'react'
-import Dis1 from '../images/discover-1.png'
-import Dis2 from '../images/discover-2.png'
-import Dis3 from '../images/discover-3.png'
-import Dis4 from '../images/discover-4.png'
+import Dis1 from '../../../images/discover-1.png'
+import Dis2 from '../../../images/discover-2.png'
+import Dis3 from '../../../images/discover-3.png'
+import Dis4 from '../../../images/discover-4.png'
 
 
 export default function Discover() {
