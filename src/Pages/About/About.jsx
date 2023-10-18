@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { LanguageContext } from '../../App';
 import Intro_frame from '../../images/Intro-frame.png'
-import Bg5 from '../../images/Bg5.png'
+import Bg5 from '../../images/bg5.png'
 
 import About1 from '../../images/about1.png'
 import About2 from '../../images/about2.png'
