@@ -1,0 +1,279 @@
+.booking {
+
+    .intro {
+        // background-image: url("../../images/Bg3.png");
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // position: relative;
+        width           : 100%;
+      
+        position        : relative;
+        background-color: #523c0b;
+
+        .bg-img {
+            width   : 100%;
+            height  : 100%;
+            z-index : 0;
+            position: absolute;
+            top     : 0;
+            left    : 0;
+
+            img {
+                width : 100%;
+                height: 100%;
+            }
+        }
+
+        h1 {
+            color     : var(--foundation-logo-shades-logo-shades-100, #ece4d1);
+            text-align: center;
+            max-width : 687px;
+            width     : 100%;
+            margin    : auto;
+            /* EN-Display Medium */
+
+         
+            font-size  : 45px;
+            font-style : normal;
+            font-weight: 500;
+            line-height: 52px;
+            /* 115.556% */
+            border     : 1px solid var(--foundation-logo-shades-logo-shades-600, #b09860);
+            padding    : 25px 30px;
+        }
+
+        .sm-scr {
+            display: none;
+        }
+
+        .intro-in {
+            width   : 100%;
+            padding : 276px 157px 200px;
+            position: relative;
+            z-index : 100;
+        }
+
+        .image {
+            bottom  : -48px;
+            position: absolute;
+            width   : 100%;
+            height  : 89px;
+
+            img {
+                width : 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .priv-sc2 {
+position: relative;
+        padding: 106px 256px;
+        .image-sec2 {
+            width   : 100%;
+            height  : 100%;
+            z-index : 0;
+            position: absolute;
+            top     : 0;
+            left    : 0;
+
+            img {
+                width : 100%;
+                height: 100%;
+            }
+        }
+        .inner {
+            margin-bottom: 54px;
+         
+        }
+
+        h4 {
+            color        : var(--foundation-logo-shades-logo-shades-600, #B09860);
+            text-align   : start;
+            /* EN-Headline Large */
+            //font-family  : Satoshi;
+            font-size    : 32px;
+            font-style   : normal;
+            font-weight  : 700;
+            line-height  : 40px;
+            /* 125% */
+            margin-bottom: 23px;
+        }
+
+        h5 {
+            color: var(--foundation-logo-shades-logo-shades-500, #C1A76A);
+width: calc(100% - 7px);
+color: var(--foundation-logo-shades-logo-shades-600, #B09860);
+margin-bottom: 25px;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 125% */
+
+        }
+
+        span {
+            width                : 7px;
+            height               : 7px;
+            display              : inline-block;
+            background-color     : #C1A76A;
+            border-radius        : 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius   : 50%;
+            -ms-border-radius    : 50%;
+            -o-border-radius     : 50%;
+            margin: 17px 5px 0;
+        }
+
+        .paragr {
+            display: flex;
+            
+            align-items: start;
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .booking {
+
+
+        .priv-sc2 {
+
+            padding: 120px;
+
+
+        }
+
+
+    }
+
+}
+
+
+@media (max-width: 786px) {
+    .booking {
+        .intro {
+            h1 {
+                max-width: auto;
+                padding  : 10px;
+                font-size: 20px;
+            }
+
+            margin-bottom: 40px;
+
+            .intro-in {
+                padding: 200px 57px 200px;
+            }
+        }
+
+        .priv-sc2 {
+
+            padding: 120px 60px;
+            .inner {
+                margin-bottom: 19px;
+            }
+            h4 {
+                margin-bottom: 19px;
+                color: var(--foundation-logo-shades-logo-shades-600, #B09860);
+
+                /* EN-Title Large */
+             
+                font-size  : 22px;
+                font-style : normal;
+                font-weight: 700;
+                line-height: 28px;
+                /* 127.273% */
+            }
+
+            h5 {
+                color: var(--foundation-logo-shades-logo-shades-500, #C1A76A);
+                text-align: right;
+                
+                /* AR-TITLE LARGE */
+              
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 28px; /* 127.273% */
+            }
+            span{
+                
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    background-color: #c1a76a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 12px 5px 0;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 430px) {
+    .booking {
+        .intro {
+            height: 350px;
+.intro-in{
+    padding:200px 57px 150px;
+   
+}
+            .bg-scr {
+                display: none;
+            }
+h1{
+    font-size        : 21px !important ;
+}
+            .sm-scr {
+                display          : block;
+                position         : absolute;
+                top              : 60%;
+                left             : 50%;
+                transform        : translate(-50%, -50%);
+                width            : 340px;
+                padding          : 12px 26px;
+                color            : var(--foundation-logo-shades-logo-shades-100, #ece4d1);
+                text-align       : center;
+                /*EN-HeadlineSmall*/
+                //font-family      : Satoshi;
+               
+                font-style       : normal;
+                font-weight      : 400;
+                line-height      : 32px;
+                /*133.333%*/
+                -moz-transform   : translate(-50%);
+                -ms-transform    : translate(-50%, -50%);
+                -o-transform     : translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform   : translate(-50%, -50%);
+            }
+
+            .image {
+                height: 70px;
+                bottom: -38px;
+            }
+        }
+
+        .priv-sc2 {
+
+            padding: 80px 20px;
+
+
+        }
+    }
+}

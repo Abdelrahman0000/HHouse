@@ -1,15 +1,28 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { List,X} from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom';
 export default function Navbar({setLanguage,language,}) {
   const [isClose , setClose]=useState(false)
+  const [isSticky, setIsSticky] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setIsSticky(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleLanguageChange = (newLanguage) => {
     setLanguage(newLanguage);
   };
   return (
-    <div className="navbar">
+    <div className={`navbar ${isSticky ? 'sticky' : ''}`}>
 
 
 
@@ -96,7 +109,8 @@ export default function Navbar({setLanguage,language,}) {
     </div></div>
 <ul className="right">
 <li> <Link to={'/about'}>About Us</Link> </li>
-<li> <Link to={'/contact_us'}>Contact Us</Link> </li>
+
+<li> <Link to={'/gallery'} >Gallery</Link> </li>
 <li> <Link  onClick={() => handleLanguageChange('ar')}>العربية</Link> </li>
 </ul>
 
